@@ -7,7 +7,8 @@
     "packages/ui-components",
     "packages/vcraft-base",
     "packages/vcraft-editor",
-    "packages/page-management"
+    "packages/page-management",
+    "packages/nuxt-site-config"
   ],
   "packageManager": "yarn@4.9.2",
   "scripts": {

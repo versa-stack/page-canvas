@@ -1,6 +1,11 @@
 import tailwindcss from '@tailwindcss/vite'
+import { extendNuxtConfig } from '@versa-stack/page-canvas-nuxt-site-config'
+import { fileURLToPath } from 'node:url'
+import { dirname } from 'node:path'
 
-export default defineNuxtConfig({
+const currentDir = dirname(fileURLToPath(import.meta.url))
+
+export default defineNuxtConfig(extendNuxtConfig(process.env.NUXT_UI_CONFIG_DIR || currentDir, {
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   ssr: false,
@@ -30,4 +35,4 @@ export default defineNuxtConfig({
   pinia: {
     storesDirs: ['./app/stores/**'],
   },
-})
+}))
