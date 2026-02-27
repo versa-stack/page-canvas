@@ -1,0 +1,30 @@
+{
+  "name": "@versa-stack/page-canvas-vcraft-base",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "postinstall": "nuxt prepare",
+    "type-check": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@formkit/vue": "^1.6.9",
+    "@versa-stack/v-craft": "^0.1.0-alpha.26",
+    "pinia": "^3.0.4",
+    "uuid": "^11.1.0",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "^4.2.1",
+    "@types/node": "^22.14.0",
+    "nuxt": "^4.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.2.4",
+    "vue-tsc": "^3.1.5"
+  },
+  "peerDependencies": {
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.22"
+  }
+}

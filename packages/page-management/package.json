@@ -1,0 +1,32 @@
+{
+  "name": "@versa-stack/page-canvas-page-management",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "exports": {
+    ".": "./nuxt.config.ts"
+  },
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "postinstall": "nuxt prepare",
+    "type-check": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@formkit/vue": "^1.6.9",
+    "@pinia/nuxt": "^0.11.3",
+    "@versa-stack/page-canvas-vcraft-base": "workspace:^",
+    "@versa-stack/page-canvas-vcraft-editor": "workspace:^",
+    "@versa-stack/v-craft": "^0.1.0-alpha.26",
+    "nuxt": "^4.2.1",
+    "pinia": "^3.0.4",
+    "uuid": "^11.1.0",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.6.0",
+    "@types/node": "^22.14.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.2.4",
+    "vue-tsc": "^3.1.5"
+  }
+}
